@@ -3,49 +3,27 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-
   selector: 'app-login',
-
   templateUrl: './login.component.html',
-
   styleUrls: ['./login.component.css']
-
 })
 
 export class LoginComponent implements OnInit 
-
 {
-
   data:any[];
-
   relations:any[];
-
   value:number;
-
   username:string;
-
   password:string;
-
   spouse:string;
-
   constructor(private http:HttpClient) { }
-
-
-
   ngOnInit() 
-
   {
-
     let json = {username:"username3",password:"password3"};
-
       this.getData("http://www.mocky.io/v2/5e213a252f0000670077d4d4");
-
       this.value=0;
-
   }
-
   getData(url:string)
-
   {
     this.http.get(url)
     .subscribe(
@@ -55,7 +33,6 @@ export class LoginComponent implements OnInit
       }
     ) 
   }
-
   showReg:boolean=false;
   register()
   {
