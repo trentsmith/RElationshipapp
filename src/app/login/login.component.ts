@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit
       this.getData("http://www.mocky.io/v2/5e213a252f0000670077d4d4");
       this.value=0;
   }
+  temp:any[];
   getData(url:string)
   {
   /*  this.http.get(url)
@@ -38,7 +39,7 @@ export class LoginComponent implements OnInit
     {
       console.log(data["user"][0]["username"]);
       console.log(data["user"][0]["password"]);
-      this.temp = data;
+      this.data = data;
     })
   }
   showReg:boolean=false;
