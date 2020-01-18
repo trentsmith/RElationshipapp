@@ -25,13 +25,21 @@ export class LoginComponent implements OnInit
   }
   getData(url:string)
   {
-    this.http.get(url)
+  /*  this.http.get(url)
     .subscribe(
       (data:any[])=>
       {
           this.data=data;
       }
-    ) 
+    ) */
+        var test;
+    var url1 = "https://www.mocky.io/v2/5e1e02a43600001cf4c74556";
+    this.http.get(url1).subscribe((data:any[])=>
+    {
+      console.log(data["user"][0]["username"]);
+      console.log(data["user"][0]["password"]);
+      this.temp = data;
+    })
   }
   showReg:boolean=false;
   register()
