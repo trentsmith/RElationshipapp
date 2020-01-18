@@ -20,10 +20,11 @@ export class LoginComponent implements OnInit
   ngOnInit() 
   {
     let json = {username:"username3",password:"password3"};
-      this.getData("http://www.mocky.io/v2/5e213a252f0000670077d4d4");
+      this.getData("https://www.mocky.io/v2/5e1e02a43600001cf4c74556");
       this.value=0;
   }
   temp:any[];
+
   getData(url:string)
   {
   /*  this.http.get(url)
@@ -34,8 +35,7 @@ export class LoginComponent implements OnInit
       }
     ) */
         var test;
-    var url1 = "https://www.mocky.io/v2/5e1e02a43600001cf4c74556";
-    this.http.get(url1).subscribe((data:any[])=>
+    this.http.get(url).subscribe((data:any[])=>
     {
       console.log(data["user"][0]["username"]);
       console.log(data["user"][0]["password"]);
