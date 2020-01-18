@@ -87,11 +87,12 @@ export class LoginComponent implements OnInit
   getUserbyUsername()
   {
     var i =0;
-    for(i=0;i<this.data.length;i++)
+    console.log(this.data["user"]);
+   for(i=0;i<this.data["user"].length;i++)
     {
-      if(this.data[i].username==this.name)
+      if(this.data["user"][i].username==this.name)
       {
-        if(this.data[i].password==this.password)
+        if(this.data["user"][i].password==this.password)
         {
           this.username=this.name;
           this.showInfo1=!this.showInfo1;
