@@ -41,7 +41,7 @@
 
     <br>
     Enter Name
-<input>
+<input (keyup)="onNamesKeyUp($event)">
 <br>
 <button (click)= "changeName(n[0],name1)">change name</button>
 <br>
