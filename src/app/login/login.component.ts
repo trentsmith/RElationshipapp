@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit
     {
       if(this.names[i][0]==name)
       {
-        this.names[i][1]=this.names[i][1]+n;
+        this.names[i][0]=this.names[i][0];
       }
     }
   }
