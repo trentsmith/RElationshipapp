@@ -51,6 +51,7 @@ export class LoginComponent implements OnInit
       if(this.names[i][0]==name)
       {
         this.names[i][0]=name2;
+        break;
       }
     }
     console.log(this.names);
