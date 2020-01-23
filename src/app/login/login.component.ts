@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit
   data:any[];
   relations:any[];
   value:number[];
-  names:any[];
+  names=[];
   username:string;
   password:string;
   spouse:string;
