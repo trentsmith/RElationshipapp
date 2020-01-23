@@ -61,7 +61,7 @@ export class LoginComponent implements OnInit
   }
   addPerson()
   {
-    this.names.push([" ",0,0]);
+    this.names.push([" ",0,0,0]);
   }
   register()
   {
@@ -97,6 +97,26 @@ export class LoginComponent implements OnInit
       if(this.names[i][0]==name)
       {
         this.names[i][1]=this.names[i][1]+n;
+      }
+    }
+  }
+    changeValue1(n:number,name:any)
+  {
+    for(var i=0;i<this.names.length;i++)
+    {
+      if(this.names[i][0]==name)
+      {
+        this.names[i][2]=this.names[i][2]+n;
+      }
+    }
+  }
+      changeValue2(n:number,name:any)
+  {
+    for(var i=0;i<this.names.length;i++)
+    {
+      if(this.names[i][0]==name)
+      {
+        this.names[i][3]=this.names[i][3]+n;
       }
     }
   }
