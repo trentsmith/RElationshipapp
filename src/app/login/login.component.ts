@@ -53,10 +53,11 @@ export class LoginComponent implements OnInit
         this.names[i][0]=name2;
       }
     }
+    console.log(this.names);
   }
   addPerson()
   {
-    this.names.push(["",0]);
+    this.names.push([" ",0]);
   }
   register()
   {
