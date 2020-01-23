@@ -25,7 +25,10 @@ export class LoginComponent implements OnInit
       this.value=[];
   }
   temp:any[];
-
+  calculation()
+  {
+    
+  }
   getData(url:string)
   {
   /*  this.http.get(url)
