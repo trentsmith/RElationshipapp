@@ -46,8 +46,7 @@ export class LoginComponent implements OnInit
   showReg:boolean=false;
   addPerson()
   {
-    this.names.push("");
-    this.value.push(0);
+    this.names.push(["",0]);
   }
   register()
   {
