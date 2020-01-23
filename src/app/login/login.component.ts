@@ -94,6 +94,11 @@ export class LoginComponent implements OnInit
   {
     this.password =event.target.value;
   }
+  name1:any
+    onNamesKeyUp(event:any)
+  {
+    this.name1 =event.target.value;
+  }
   showInfo1:boolean=false;
   getUserbyUsername()
   {
