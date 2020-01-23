@@ -29,12 +29,13 @@
 <div class="jumbotron"*ngIf="showInfo1">
 
 
-<button class="form-control" (click)="register()">Add
+<button class="form-control" (click)="addPerson()">Add
 </button>
-<div>
+<div *ngFor="let n of names">
+
     <br>
 
-        {{value}}
+        {{n[1]}}
 
     <br>
 
