@@ -29,8 +29,9 @@
 <div class="jumbotron"*ngIf="showInfo1">
 
 
-
-
+<button class="form-control" (click)="register()">Add
+</button>
+<div>
     <br>
 
         {{value}}
@@ -72,11 +73,11 @@
     <br>
 
     <button (click)="changeValue(-4)" class="btn">super angry</button>
-
+</div>
 </div>
 
 </div>
-
+<div class = "container"> 
 <div class="jumbotron"*ngIf="showReg">
 
     <div class="container"*ngIf="showReg">
@@ -84,5 +85,5 @@
         test
 
 </div>
-
+</div>
 </div>
