@@ -44,13 +44,13 @@ export class LoginComponent implements OnInit
     })
   }
   showReg:boolean=false;
-  changeName()
+  changeName(name:any,name2:any)
   {
     for(var i=0;i<this.names.length;i++)
     {
       if(this.names[i][0]==name)
       {
-        this.names[i][0]=this.names[i][0];
+        this.names[i][0]=name2;
       }
     }
   }
