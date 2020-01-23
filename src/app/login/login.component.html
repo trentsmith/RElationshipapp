@@ -11,7 +11,6 @@
 
 <input type ="text" class="form-control" ng-model="string" (keyup)="onPasswordKeyUp($event)" [name]="password">
 
-<br>
 
 <button (click)="getUserbyUsername()" class="form-control">Submit</button>
 
@@ -46,39 +45,13 @@
 <button (click)= "changeName(n[0],name1)">change name</button>
 <br>
     <button (click)="changeValue(4,n[0])" class="btn">Estatic</button>
-
-    <br>
-
     <button (click)="changeValue(3,n[0])" class="btn">Happy</button>
-
-    <br>
-
     <button (click)="changeValue(2,n[0])" class="btn">mildly happy</button>
-
-    <br>
-
-    <button (click)="changeValue(1,n[0])" class="btn">content</button>
-
-    <br>
-
-    
-
+    <button (click)="changeValue(1,n[0])" class="btn">content</button>  
     <button class="btn">+0</button>
-
-    <br>
-
     <button (click)="changeValue(-1,n[0])" class="btn">annoyed</button>
-
-    <br>
-
     <button (click)="changeValue(-2,n[0])" class="btn">displease</button>
-
-    <br>
-
     <button (click)="changeValue(-3,n[0])" class="btn">angry</button>
-
-    <br>
-
     <button (click)="changeValue(-4,n[0])" class="btn">super angry</button>
 </div>
 </div>
