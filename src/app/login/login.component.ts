@@ -12,7 +12,8 @@ export class LoginComponent implements OnInit
 {
   data:any[];
   relations:any[];
-  value:number;
+  value:number[];
+  name:any[];
   username:string;
   password:string;
   spouse:string;
@@ -21,7 +22,7 @@ export class LoginComponent implements OnInit
   {
     let json = {username:"username3",password:"password3"};
       this.getData("https://www.mocky.io/v2/5e1e02a43600001cf4c74556");
-      this.value=0;
+      this.value=[];
   }
   temp:any[];
 
