@@ -27,7 +27,10 @@ export class LoginComponent implements OnInit
   temp:any[];
   calculation()
   {
-    
+    for(var i = 0;i<this.names.length;i++)
+    {
+      this.calc[i]= this.names[i][2]+this.names[i][3]+this.names[i][1];
+    }
   }
   getData(url:string)
   {
