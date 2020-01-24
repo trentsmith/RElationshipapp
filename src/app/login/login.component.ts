@@ -59,9 +59,11 @@ export class LoginComponent implements OnInit
     }
     console.log(this.names);
   }
+  calc=[];
   addPerson()
   {
     this.names.push([" ",0,0,0]);
+    this.calc.push(0);;
   }
   register()
   {
