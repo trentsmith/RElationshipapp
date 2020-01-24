@@ -62,6 +62,18 @@ export class LoginComponent implements OnInit
     }
     console.log(this.names);
   }
+    changeName2(name:any,name2:any)
+  {
+    for(var i=0;i<this.names.length;i++)
+    {
+      if(this.names[i][0]==name)
+      {
+        this.calc[i]=name2;
+        break;
+      }
+    }
+    console.log(this.names);
+  }
   calc=[];
   addPerson()
   {
