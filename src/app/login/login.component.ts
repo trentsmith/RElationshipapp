@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit
   username:string;
   password:string;
   spouse:string;
+  usernamer:string;
+  passwordr:string;
   constructor(private http:HttpClient) { }
   ngOnInit() 
   {
@@ -136,6 +138,17 @@ export class LoginComponent implements OnInit
   {
     this.password =event.target.value;
   }
+  onNamerKeyUp(event:any)
+  {
+    this.usernamer =event.target.value;
+    console.log(this.usernamer);
+  }
+  onPasswordrKeyUp(event:any)
+  {
+    this.passwordr =event.target.value;
+    console.log(this.passwordr);
+
+  }  
   name1:any
     onNamesKeyUp(event:any)
   {
