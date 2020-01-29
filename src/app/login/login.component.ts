@@ -89,7 +89,9 @@ export class LoginComponent implements OnInit
 
   registers()
   {
-    this.showReg=!this.showReg;
+    var url = ""+this.usernamer.toString()+"/"+this.passwordr.toString();
+        this.http.get(url).subscribe((data:any[])=>{})
+
   }
   updateData(url:string)
   {
