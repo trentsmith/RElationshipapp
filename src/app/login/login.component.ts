@@ -86,6 +86,11 @@ export class LoginComponent implements OnInit
   {
     this.showReg=!this.showReg;
   }
+
+  registers()
+  {
+    this.showReg=!this.showReg;
+  }
   updateData(url:string)
   {
     let json = 
