@@ -89,7 +89,7 @@ export class LoginComponent implements OnInit
 
   registers()
   {
-    var url = "https://cadetbluetraumaticmachinelanguage.trentsmith1.repl.co/insertuser/"+this.usernamer.toString()+"/"+this.passwordr.toString();
+    var url = "https://cadetbluetraumaticmachinelanguage.trentsmith1.repl.co/insert/user/"+this.usernamer.toString()+"/"+this.passwordr.toString();
         this.http.get(url).subscribe((data:any[])=>{})
         console.log("success")
 
