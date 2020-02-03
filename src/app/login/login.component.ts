@@ -80,7 +80,15 @@ export class LoginComponent implements OnInit
   addPerson()
   {
     this.names.push([" ",0,0]);
-    this.calc.push(0);;
+
+    this.calc.push(0);
+    var url="https://cadetbluetraumaticmachinelanguage.trentsmith1.repl.co/insert/r/"+this.name+"/"+"name"+"/1/0/0/0";
+        this.http.get(url).subscribe((data:any[])=>
+    {
+      console.log(data["user"][0]["username"]);
+      console.log(data["user"][0]["password"]);
+      this.data = data;
+    })
   }
   register()
   {
