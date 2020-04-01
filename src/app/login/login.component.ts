@@ -175,7 +175,7 @@ export class LoginComponent implements OnInit
   {
     var i =0;
     console.log(this.data["user"]);
-   for(i=0;i<this.data["user"].length;i++)
+    for(i=0;i<this.data["user"].length;i++)
     {
       if(this.data["user"][i].username==this.name)
       {
