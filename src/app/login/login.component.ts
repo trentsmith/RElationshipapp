@@ -166,7 +166,7 @@ export class LoginComponent implements OnInit
 
   }  
   name1:any
-    onNamesKeyUp(event:any)
+  onNamesKeyUp(event:any)
   {
     this.name1 =event.target.value;
   }
