@@ -110,6 +110,7 @@ export class LoginComponent implements OnInit
       username:"username2",
       password:"password2"
     };
+    url = "https://cadetbluetraumaticmachinelanguage--trentsmith1.repl.co/update/relations/"+this.username+"/n/1/2/3"
     this.http.put(url,json).subscribe(
       (data:any[])=>
       {
